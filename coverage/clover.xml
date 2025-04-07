@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1744046546612" clover="3.2.0">
-  <project timestamp="1744046546612" name="All files">
+<coverage generated="1744046645149" clover="3.2.0">
+  <project timestamp="1744046645149" name="All files">
     <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="10" coveredelements="10" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
     <file name="stringCalculator.ts" path="/Users/karishmagolani/Documents/personal/string-calculator/src/utils/stringCalculator.ts">
       <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
-      <line num="2" count="3" type="cond" truecount="2" falsecount="0"/>
-      <line num="3" count="2" type="stmt"/>
-      <line num="4" count="2" type="cond" truecount="1" falsecount="0"/>
-      <line num="5" count="2" type="stmt"/>
+      <line num="2" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="3" count="3" type="stmt"/>
+      <line num="4" count="3" type="cond" truecount="1" falsecount="0"/>
+      <line num="5" count="3" type="stmt"/>
     </file>
   </project>
 </coverage>
