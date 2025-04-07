@@ -6,11 +6,12 @@ FNH:1
 FNDA:1,add
 DA:1,1
 DA:2,1
-DA:3,1
-DA:4,1
+DA:3,0
+DA:4,0
 LF:4
-LH:4
+LH:2
 BRDA:1,0,0,1
-BRF:1
+BRDA:2,1,0,0
+BRF:2
 BRH:1
 end_of_record

@@ -1,4 +1,4 @@
 export function add(numbers: string): number {
-  // Empty implementation for now (test should fail first)
+  if (numbers === "") return 0;
   return -1;
 }
