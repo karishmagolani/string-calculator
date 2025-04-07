@@ -1,54 +1,48 @@
-# React + TypeScript + Vite
+# String Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a frontend implementation of the classic String Calculator Kata using **Test-Driven Development (TDD)**, built with **React + TypeScript + Vite**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Implements `add(numbers: string): number` using TDD
+- Supports:
+  - Empty input → `0`
+  - Comma-separated numbers
+  - Newlines as delimiters
+  - Custom delimiters (`//;\n1;2`)
+  - Error on negative numbers (e.g., `-1`)
+- User-friendly React UI with:
+  - Input box
+  - Calculate button
+  - Result and error display
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠️ Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- React
+- TypeScript
+- Vite
+- Jest
+- TailwindCSS for styling
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+## 📦 Setup Instructions
+
+```bash
+# Clone the repo
+git clone https://github.com/karishmagolani/string-calculator.git
+cd string-calculator
+
+# Install dependencies
+npm install
+
+# Run the app locally
+npm run dev
+
+# Run tests
+npm run test
 ```
