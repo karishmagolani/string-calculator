@@ -1,4 +1,5 @@
 export function add(numbers: string): number {
   if (numbers === "") return 0;
-  return -1;
+  const num = parseInt(numbers, 10);
+  return isNaN(num) ? 0 : num;
 }
